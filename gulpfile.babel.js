@@ -6,18 +6,16 @@ import postCSS from "gulp-postcss"
 import stylus from "gulp-stylus"
 import sourceMaps from "gulp-sourcemaps"
 import rupture from "rupture"
-import autoprefixer from "autoprefixer"
 import cssNano from "cssnano"
 import rename from "gulp-rename"
 import short from "postcss-short"
 import concat from "gulp-concat"
 import replace from "gulp-replace"
 import assets from "postcss-assets"
+import autoprefixer from "autoprefixer"
 
 import pug from "gulp-pug"
 
-import stylelint from "stylelint"
-import stylelintConfig from "./stylelint.config"
 import reporter from "postcss-browser-reporter"
 
 import terser from "gulp-terser"
@@ -38,7 +36,7 @@ const path = {
         html: "./app/pug/pages/**/*.pug",
         css: "./app/style/main.styl",
         js: "./app/js/common.js",
-        img: "./app/img/**/*.+(jpg|jpeg|png|gif|ico)",
+        img: "./app/img/**/*.+(jpg|jpeg|png|gif|ico|svg)",
         svg: "./app/img/svg/*.svg",
         fonts: "./app/fonts/**/*.+(ttf|eot|woff|svg)"
     },
@@ -50,7 +48,7 @@ const path = {
             "./app/libs/swiper/dist/css/swiper.min.css"
         ],
         js: [
-            "./app/libs/jquery/dist/jquery.slim.min.js",
+            "./app/libs/jquery/dist/jquery.min.js",
             "./app/libs/fancybox/dist/jquery.fancybox.min.js",
             "./app/libs/swiper/dist/js/swiper.min.js",
             "./app/libs/svg4everybody/dist/svg4everybody.min.js"
@@ -112,11 +110,7 @@ export function html() {
 export function styles() {
 
     let postCSSPlugins = [
-        stylelint(stylelintConfig),
         short(),
-        autoprefixer({
-            browsers: ['last 4 version']
-        }),
         assets({
             loadPaths: ["build/img/"],
             relative: "build/css"
@@ -136,6 +130,7 @@ export function styles() {
             use: [rupture()]
         }))
         .pipe(postCSS(postCSSPlugins))
+        .pipe(postCSS([ autoprefixer() ]))
         .pipe(rename({
             basename: 'main',
             suffix: '.min'
