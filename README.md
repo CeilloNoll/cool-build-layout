@@ -20,7 +20,6 @@ bower update
 
 [Gulp](https://gulpjs.com/)
 [Bower](https://bower.io/)
-[Stylelint](https://stylelint.io/)
 
 
 #### Требования к оформлению CSS и Вёрстке
