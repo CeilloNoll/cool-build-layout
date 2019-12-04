@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dab7c8ce-91fc-4cdf-872a-f76608b091d7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,7 +52,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1575456365092</updated>
-      <workItem from="1575456366337" duration="673000" />
+      <workItem from="1575456366337" duration="835000" />
     </task>
     <task id="LOCAL-00001" summary="Внес базовые изменения в сборку Саши. Использовать для новых проектов.">
       <created>1575456883535</created>
@@ -62,7 +61,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575456883535</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Убрал упоминание Stylelint в readme">
+      <created>1575457071556</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1575457071556</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -83,6 +89,7 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="Внес базовые изменения в сборку Саши. Использовать для новых проектов." />
-    <option name="LAST_COMMIT_MESSAGE" value="Внес базовые изменения в сборку Саши. Использовать для новых проектов." />
+    <MESSAGE value="Убрал упоминание Stylelint в readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="Убрал упоминание Stylelint в readme" />
   </component>
 </project>
