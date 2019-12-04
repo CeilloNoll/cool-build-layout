@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dab7c8ce-91fc-4cdf-872a-f76608b091d7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/pug/layout/template.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/pug/layout/template.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/pug/pages/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/pug/pages/index.pug" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,13 +17,20 @@
       <executable />
     </execution>
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="cool-build-layout" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
   <component name="ProjectId" id="1UVz5MaUa08RzaUmIgWKy1a2GMT" />
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="ToolWindowSVN Repositories.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="node.js.detected.package.stylelint" value="true" />
     <property name="node.js.path.for.package.stylelint" value="project" />
@@ -29,6 +38,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -42,6 +52,17 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration default="true" type="js.build_tools.gulp">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -52,7 +73,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1575456365092</updated>
-      <workItem from="1575456366337" duration="835000" />
+      <workItem from="1575456366337" duration="1167000" />
+      <workItem from="1575458005805" duration="38000" />
     </task>
     <task id="LOCAL-00001" summary="Внес базовые изменения в сборку Саши. Использовать для новых проектов.">
       <created>1575456883535</created>
@@ -68,7 +90,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575457071556</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Правка gitignore">
+      <created>1575457223348</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1575457223348</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -79,7 +108,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -90,6 +121,7 @@
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="Внес базовые изменения в сборку Саши. Использовать для новых проектов." />
     <MESSAGE value="Убрал упоминание Stylelint в readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="Убрал упоминание Stylelint в readme" />
+    <MESSAGE value="Правка gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="Правка gitignore" />
   </component>
 </project>
