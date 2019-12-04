@@ -9,11 +9,7 @@ Name project: Name-p
 
 // Vars
 
-def-color = #fff
-def-font = sans-serif
-
 // Adaptive
-
 flex-version = flex
 support-for-ie = false
 vendor-prefixes = official
@@ -21,7 +17,6 @@ vendor-prefixes = official
 
 rupture.scale =       0    576px    768px    992px    1200px
 rupture.scale-names =  'xs'     'sm'     'md'     'lg'      'xl'
-
 
 	
 *
@@ -37,15 +32,38 @@ rupture.scale-names =  'xs'     'sm'     'md'     'lg'      'xl'
 		margin 0
 		box-sizing: border-box
 
+a
+	display block
+	text-decoration none
+	color inherit
+
+	&:hover
+		color inherit
+		text-decoration none
+
+
+button:focus,
+textarea:focus,
+input:focus
+	outline none
+
 html
 	font-size 16px
 
 body
 	line-height 1.5
-	font-family def-font
-	color: def-color
+	font-family defFont
+	color: bsColor
 	size 100%
 	//background-image resolve('1.jpg')
+
+.visually-hidden
+	position absolute
+	clip rect(0 0 0 0)
+	width 1px
+	height 1px
+	margin -1px
+
 
 	
 	

@@ -42,35 +42,37 @@ const path = {
     },
     libs: {
         css: [
-            "./app/libs/bootstrap4/dist/css/bootstrap-grid.min.css",
+            "./app/libs/bootstrap4/dist/css/bootstrap.min.css",
             "./app/libs/normalize.css/normalize.css",
             "./app/libs/fancybox/dist/jquery.fancybox.min.css",
             "./app/libs/swiper/dist/css/swiper.min.css"
         ],
         js: [
             "./app/libs/jquery/dist/jquery.min.js",
+            "./app/libs/bootstrap4/dist/js/bootstrap.bundle.js",
             "./app/libs/fancybox/dist/jquery.fancybox.min.js",
             "./app/libs/swiper/dist/js/swiper.min.js",
-            "./app/libs/svg4everybody/dist/svg4everybody.min.js"
+            "./app/libs/svg4everybody/dist/svg4everybody.min.js",
+            "./app/libs/masked-input/jquery.maskedinput.min.js"
         ]
     },
     dest: {
         html: "./build/",
-        css: "./build/css/",
-        js: "./build/js/",
-        img: "./build/img/",
-        svg: "./build/img/",
-        fonts: "./build/fonts/"
+        css: "./build/assets/css/",
+        js: "./build/assets/js/",
+        img: "./build/assets/img/",
+        svg: "./build/assets/img/",
+        fonts: "./build/assets/fonts/"
     },
     watch: {
         html: "./app/pug/**/*.pug",
         css: "app/style/**/*.styl",
         js: "app/js/common.js",
-        img: "app/img/**/*.+(jpg|jpeg|png|gif|ico)",
+        img: "app/img/**/*.+(jpg|jpeg|png|gif|ico|svg)",
         svg: "app/img/svg/*.svg",
         fonts: "./app/fonts/**/*"
     }
-}
+};
 
 
 export function browserSyncs() {
@@ -112,8 +114,8 @@ export function styles() {
     let postCSSPlugins = [
         short(),
         assets({
-            loadPaths: ["build/img/"],
-            relative: "build/css"
+            loadPaths: ["build/assets/img/"],
+            relative: "build/assets/css"
         }),
         cssNano({
             discardUnused: {
