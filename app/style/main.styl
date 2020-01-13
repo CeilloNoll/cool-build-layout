@@ -2,23 +2,15 @@
 @import './mixins/mixin.styl'
 @import './fonts.styl'
 
-/*
-Author: Name
-Name project: Name-p
-*/
-
-// Vars
-
 // Adaptive
 flex-version = flex
 support-for-ie = false
 vendor-prefixes = official
 
-
 rupture.scale =       0    576px    768px    992px    1200px
 rupture.scale-names =  'xs'     'sm'     'md'     'lg'      'xl'
 
-	
+//normalize
 *
 	padding 0
 	margin 0
@@ -41,11 +33,11 @@ a
 		color inherit
 		text-decoration none
 
-
 button:focus,
 textarea:focus,
 input:focus
 	outline none
+	box-shadow none
 
 html
 	font-size 16px
@@ -64,6 +56,7 @@ body
 	height 1px
 	margin -1px
 
-
-	
-	
+//изменение ширины сетки
+.container
+	+above(xl)
+		max-width 1140px
